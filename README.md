@@ -28,7 +28,7 @@ This project uses [uv](https://github.com/astral-sh/uv) to run.
 Make sure you have it installed, then you can run the script directly:
 
 ```
-uv run script.py --help
+uv run noise_generator_eq.py --help
 ```
 
 Dependencies (uv will handle these automatically if you specify them in your environment):
@@ -43,7 +43,7 @@ Dependencies (uv will handle these automatically if you specify them in your env
 Run the script with:
 
 ```bash
-uv run script.py [OPTIONS]
+uv run noise_generator_eq.py [OPTIONS]
 ```
 
 ### **Options**
@@ -64,13 +64,13 @@ uv run script.py [OPTIONS]
 Generate **10 minutes of pink noise** at 48 kHz:
 
 ```
-uv run script.py --noise-type pink_technical --duration 10 --sample-rate 48000 --output pink.wav
+uv run noise_generator_eq.py --noise-type pink_technical --duration 10 --sample-rate 48000 --output pink.wav
 ```
 
 Generate **5 minutes of bass-heavy brown noise**:
 
 ```
-uv run script.py --noise-type brown_screenshot --duration 5 --output brown.wav
+uv run noise_generator_eq.py --noise-type brown_screenshot --duration 5 --output brown.wav
 ```
 
 * * *
@@ -79,7 +79,7 @@ uv run script.py --noise-type brown_screenshot --duration 5 --output brown.wav
 
 To create your own noise type:
 
-1. Open script.py
+1. Open noise_generator_eq.py
 2. Add a new entry to the EQ\_PRESETS dictionary, e.g.:
 
 ```
@@ -93,7 +93,7 @@ To create your own noise type:
 3. Run it with:
 
 ```
-uv run script.py --noise-type my_noise
+uv run noise_generator_eq.py --noise-type my_noise
 ```
 
 * * *
